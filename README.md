@@ -28,7 +28,7 @@ techcon-2024/
 ├─ schedule.html # Detailed schedule (table)
 ├─ register.html # Registration form
 └─ contact.html # Contact info, socials, map, contact form (+ optional video)
-
+```
 ---
 
 ## 🧭 Page Requirements
