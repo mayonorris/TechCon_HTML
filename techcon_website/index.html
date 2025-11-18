@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechCon 2024 </title>
+  <meta name="description" content="Official website for TechCon 2024 — schedule, speakers, registration, and contact information." />
+</head>
+<body>
+  <!-- Header: conference name + primary navigation -->
+  <header>
+    <h1>TechConf 2024</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content: intro section + accessible promo video -->
+  <main>
+    <section aria-labelledby="intro">
+      <h2 id="intro">Welcome to TechCon 2024</h2>
+      <p>
+        Join developers, data scientists, and tech leaders for three days of talks, workshops, and networking.
+        Explore AI, Web, Cloud, and Security tracks—all in one place.
+      </p>
+
+      <figure>
+        <video
+          controls
+          preload="metadata"
+          width="800"
+          style="max-width:100%; height:auto;"
+          poster="promo-poster.jpg"
+          aria-describedby="promo-desc"
+        >
+          <!-- Replace with your real video source -->
+          <source src="promo.mp4" type="video/mp4" />
+          <!-- Subtitles/captions file (WebVTT). Provide a real .vtt file if available. -->
+          <track kind="subtitles" src="promo.en.vtt" srclang="en" label="English" default />
+          <!-- Fallback text for very old browsers -->
+          Your browser does not support the video tag.
+        </video>
+        <figcaption id="promo-desc">Promo video: highlights from TechCon 2024’s keynotes and sessions.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <!-- Footer: include the word “Copyright” and the current year -->
+  <footer>
+    <p>Copyright © 2025 TechCon 2024 Conference. All rights reserved.</p>
+  </footer>
+</body>
+</html>
