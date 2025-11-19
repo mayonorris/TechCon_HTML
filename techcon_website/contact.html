@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact TechCon 2024</title>
+  <meta name="description"
+        content="Get in touch with the TechCon 2024 team for any inquiries or support." />
+</head>
+<body>
+  <!-- Header: conference name + primary navigation -->
+  <header>
+    <h1>Contact Us</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contact information section -->
+    <article id="contact-info">
+      <h2>Contact Information</h2>
+      <p>
+        If you have any questions or need assistance, please reach out to us using the
+        following contact details:
+      </p>
+          Email:
+          <a href="mailto:contact-techcon@techcon.com">contact-techcon@techcon.com</a>
+        </p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Address: 123 TechCon Blvd, Innovation City, TX 75001</p>
+      </p>
+      
+      <h3>Follow Us</h3>
+      <ul>
+        <li>
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </li>
+      </ul>
+    </article>
+
+    <!-- Embedded Google Map -->
+    <section aria-label="Conference location">
+      <h2>Conference Venue</h2>
+      <iframe
+        title="TechCon 2024 conference venue location on Google Maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.95565131531697!3d-37.81732797975152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5771e5e1b5a4c0!2sConference%20Center!5e0!3m2!1sen!2s!4v1700000000000"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Contact form -->
+    <section aria-label="Contact form">
+      <h2>Contact Us Form</h2>
+      <form action="/submit_contact" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechCon 2024 Conference. All rights reserved.</p>
+  </footer>
+</body>
+</html>
