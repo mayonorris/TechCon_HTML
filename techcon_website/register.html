@@ -1,0 +1,63 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register for TechCon 2024</title>
+    <meta name="description"
+            content="Sign up to attend TechCon 2024. Choose your ticket type and complete the registration form." />
+</head>
+
+<body>
+    <!-- Header: conference name + primary navigation -->
+    <header>
+        <h1>Register for TechCon 2024</h1>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html" aria-current="page">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="registration-form">
+            <h2>Registration Form</h2>
+            <form action="/submit_registration" method="post">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required />
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+
+                <label for="ticket-type">Ticket Type:</label>
+                <select id="ticket-type" name="ticket-type" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="standard">Standard - $199</option>
+                    <option value="student">Student - $99</option>
+                    <option value="vip">VIP - $399</option>
+                </select>
+
+                <!-- Terms & Conditions -->
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required />
+                    I agree to the terms and conditions of TechCon 2024.
+                </label>
+
+                <button type="submit">Submit Registration</button>
+            </form>
+        </article>
+    </main>
+</body>
+
+<footer>
+    <p>&copy; 2024 TechCon. All rights reserved.</p>
+</footer>
+
+</html>
