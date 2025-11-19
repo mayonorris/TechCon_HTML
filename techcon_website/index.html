@@ -7,7 +7,6 @@
   <meta name="description" content="Official website for TechCon 2024 — schedule, speakers, registration, and contact information." />
 </head>
 <body>
-  <!-- Header: conference name + primary navigation -->
   <header>
     <h1>TechCon 2024</h1>
     <nav aria-label="Primary">
@@ -21,7 +20,6 @@
     </nav>
   </header>
 
-  <!-- Main content: intro section + accessible promo video (YouTube) -->
   <main>
     <section aria-labelledby="intro">
       <h2 id="intro">Welcome to TechCon 2024</h2>
@@ -31,22 +29,23 @@
       </p>
 
       <figure>
-        <!-- YouTube embed: replace the video ID if needed -->
-        <iframe
+        <video
+          controls
+          preload="metadata"
           width="800"
-          style="max-width:100%; height:auto; aspect-ratio:16/9; border:0;"
-          src="https://www.youtube.com/embed/-cDNA1lewEo"
-          title="TechCon 2024 Promo"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-        <figcaption id="promo-desc">Promo video: highlights from TechCon 2024’s keynotes and sessions. (Enable captions in the YouTube player for subtitles.)</figcaption>
+          style="max-width:100%; height:auto;"
+          poster="promo-poster.jpg"
+          aria-describedby="promo-desc"
+        >
+          <source src="promo.mp4" type="video/mp4" />
+          <!-- <track kind="subtitles" src="promo.en.vtt" srclang="en" label="English" default /> -->
+          Your browser does not support the video tag.
+        </video>
+        <figcaption id="promo-desc">Promo video: highlights from TechCon 2024’s keynotes and sessions.</figcaption>
       </figure>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>Copyright © 2025 TechCon 2024 Conference. All rights reserved.</p>
   </footer>
